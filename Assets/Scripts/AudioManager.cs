@@ -12,8 +12,7 @@ public class AudioManager : MonoBehaviour
 
 
     public AudioMixerGroup musicGroup;
-
-
+    public AudioMixerGroup sfxGroup;
     public AudioMixerGroup foleyGroup;
     // Use this for initialization
     void Awake()
@@ -29,6 +28,14 @@ public class AudioManager : MonoBehaviour
                 sound.source.outputAudioMixerGroup = musicGroup;
                 sound.source.loop = true;
                 sound.source.playOnAwake = true;
+            }
+            else if (sound.group == "Foley")
+            {
+                sound.source.outputAudioMixerGroup = foleyGroup;
+            }
+            else if (sound.group == "SFX")
+            {
+                sound.source.outputAudioMixerGroup = sfxGroup;
             }
             else
             {

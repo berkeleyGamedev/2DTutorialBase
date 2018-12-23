@@ -1,23 +1,9 @@
-Base path: /Applications/Unity 2018.2.12f/Unity.app/Contents
+Base path: /Applications/Unity 2018.3.0f2/Unity.app/Contents
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  api=14 insize=1957 outsize=2017 ok=1
-Cmd: translateComputeKernel
-  api=14 insize=2017 outsize=3617 ok=1
+  api=14 insize=1957 outsize=1137 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-
-Quitting shader compiler process

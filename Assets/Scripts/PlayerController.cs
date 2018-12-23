@@ -207,6 +207,7 @@ public class PlayerController : MonoBehaviour
     //Heals player health based on 'value' parameter, passed by caller
     public void Heal(float value)
     {
+        FindObjectOfType<AudioManager>().Play("Potion");
         //Increment Health
         currHealth += value;
         currHealth = Mathf.Min(currHealth, maxHealth);

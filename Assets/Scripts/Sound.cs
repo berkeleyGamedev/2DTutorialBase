@@ -5,8 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class Sound
 {
-
     public string name;
+
+    public string group;
 
     public AudioClip clip;
 
