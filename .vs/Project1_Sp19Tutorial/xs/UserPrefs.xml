@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{EBB396A4-BE01-4713-C6F5-DD1BC2C5DAEB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EndTriggerScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="221" Column="34" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="101" Column="58" />
-      <File FileName="Assets/Scripts/LineofSight.cs" Line="8" Column="27" />
+      <File FileName="Assets/Scripts/EndTriggerScript.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
