@@ -764,7 +764,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d4fbffff
+      m_ExpandedIDs: befbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -837,9 +837,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f00e0000
-    m_LastClickedID: 3824
-    m_ExpandedIDs: 00000000c20a00002c0b0000ce0c0000100d0000480d0000782e00007a2e00007c2e00007e2e0000802e0000822e0000842e0000862e0000882e00008a2e000000ca9a3b
+    m_SelectedIDs: ec0e0000
+    m_LastClickedID: 3820
+    m_ExpandedIDs: 00000000be0a0000280b0000ca0c00000c0d0000440d0000662e0000682e00006a2e00006c2e00006e2e0000702e0000722e0000742e0000762e0000782e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -867,7 +867,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c20a00002c0b0000ce0c0000100d0000480d0000782e00007a2e00007c2e00007e2e0000802e0000822e0000842e0000862e0000882e00008a2e0000
+    m_ExpandedIDs: 00000000be0a0000280b0000ca0c00000c0d0000440d0000662e0000682e00006a2e00006c2e00006e2e0000702e0000722e0000742e0000762e0000782e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -894,22 +894,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 3cf4fbff6e260000903500004c2900003ac8ffff70400000644000003c40000068540000da250000462e0000522900009e2700009c34000044490000f6eaffff242700005e29000016360000903700004053f5ff382c0000542f0000f03000000e2800001c4200001242000028300000a82e0000542a0000c4300000c03000008a2a00002e2d0000de290000b0c00000000000007ac9000038c90000f83f0000e02b000020590000de3e0000dc420000503600009c540000742f0000b40c00005c0d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: EndTriggerScript
-      m_OriginalName: EndTriggerScript
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 11922
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
