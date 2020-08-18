@@ -4,8 +4,9 @@
 AnimationClip:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Attack_West
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: attack_west
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,14 +20,25 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300004, guid: 78479ce5223c0f34b9785f49abbf633d, type: 3}
-    - time: 0.125
-      value: {fileID: 21300006, guid: 78479ce5223c0f34b9785f49abbf633d, type: 3}
+      value: {fileID: -1199171193230834840, guid: a6be1701ee9e63e4cb8988634b0ac64d,
+        type: 3}
+    - time: 0.06666667
+      value: {fileID: 7921110858076428761, guid: a6be1701ee9e63e4cb8988634b0ac64d,
+        type: 3}
+    - time: 0.16666667
+      value: {fileID: 4061298573261969396, guid: a6be1701ee9e63e4cb8988634b0ac64d,
+        type: 3}
+    - time: 0.26666668
+      value: {fileID: 1139788931543967201, guid: a6be1701ee9e63e4cb8988634b0ac64d,
+        type: 3}
+    - time: 0.33333334
+      value: {fileID: -6930666598012810584, guid: a6be1701ee9e63e4cb8988634b0ac64d,
+        type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 8
+  m_SampleRate: 30
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -41,14 +53,17 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300004, guid: 78479ce5223c0f34b9785f49abbf633d, type: 3}
-    - {fileID: 21300006, guid: 78479ce5223c0f34b9785f49abbf633d, type: 3}
+    - {fileID: -1199171193230834840, guid: a6be1701ee9e63e4cb8988634b0ac64d, type: 3}
+    - {fileID: 7921110858076428761, guid: a6be1701ee9e63e4cb8988634b0ac64d, type: 3}
+    - {fileID: 4061298573261969396, guid: a6be1701ee9e63e4cb8988634b0ac64d, type: 3}
+    - {fileID: 1139788931543967201, guid: a6be1701ee9e63e4cb8988634b0ac64d, type: 3}
+    - {fileID: -6930666598012810584, guid: a6be1701ee9e63e4cb8988634b0ac64d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.36666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -67,5 +82,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_GenerateMotionCurves: 0
   m_Events: []
