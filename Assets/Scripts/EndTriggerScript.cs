@@ -5,12 +5,12 @@ using UnityEngine;
 public class EndTriggerScript : MonoBehaviour
 {
 
-    // private void OnTriggerEnter2D(Collider2D coll)
-    // {
-    //     if (coll.CompareTag("Player"))
-    //     {
-    //         GameObject gm = GameObject.FindWithTag("GameController");
-    //         gm.GetComponent<GameManager>().WinGame();
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D coll)
+     {
+         if (coll.CompareTag("Player"))
+         {
+             GameObject gm = GameObject.FindWithTag("GameController");
+             gm.GetComponent<GameManager>().WinGame();
+         }
+     }
 }
