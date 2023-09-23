@@ -29,12 +29,17 @@ public class Enemy : MonoBehaviour
 
     #region Unity_functions
 
+    private SpriteRenderer character;
+    private Color col;
+
     //runs once on creation
     private void Awake()
     {
         EnemyRB = GetComponent<Rigidbody2D>();
 
         currHealth = maxHealth;
+        character = GetComponent<SpriteRenderer>();
+        col = character.color;
     }
 
     //runs once every frame
@@ -52,10 +57,14 @@ public class Enemy : MonoBehaviour
     #region Movement_functions
     private void Move()
     {
-        //calculate the movement vector player position
-        Vector2 direction = player.position - transform.position;
+        
+         //calculate the movement vector player position
+         Vector2 direction = player.position - transform.position;
 
-        EnemyRB.velocity = direction.normalized * movespeed;
+         EnemyRB.velocity = direction.normalized * movespeed;
+        
+
+     
     }
     #endregion
 
@@ -111,6 +120,16 @@ public class Enemy : MonoBehaviour
 
         currHealth -= value;
         Debug.Log("Health is now" + currHealth.ToString());
+
+        if (currHealth < maxHealth && this.gameObject.CompareTag("InvisibleEnemy"))
+        {
+            Debug.Log("should be invisible");
+
+            Color color = character.color;
+            color.a = 0.30f;
+            character.color = color;
+        }
+
 
         if (currHealth <= 0)
         {

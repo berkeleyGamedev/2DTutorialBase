@@ -9,6 +9,12 @@ public class PlayerController : MonoBehaviour
     public float movespeed;
     float x_input;
     float y_input;
+    private float dashTimer;
+    private bool isDashing;
+    public float dashCoolDown;
+    public float dashDuration;
+    public float dashSpeed;
+
 
     #endregion
 
@@ -51,11 +57,20 @@ public class PlayerController : MonoBehaviour
         currHealth = maxHealth;
 
         HPSlider.value = currHealth / maxHealth;
+
+        dashTimer = 0;
+
+        isDashing = false;
     }
 
     private void Update()
     {
         if (isAttacking)
+        {
+            return;
+        }
+
+        if (isDashing)
         {
             return;
         }
@@ -75,6 +90,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
             Interact();
+        }
+
+        if (Input.GetKeyDown(KeyCode.K) && dashTimer <= 0)
+        {
+            Dash();
+        } else
+        { 
+            dashTimer -= Time.deltaTime;
         }
     }
     #endregion
@@ -114,6 +137,44 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("DirX", curreDirection.x);
         anim.SetFloat("DirY", curreDirection.y);
     }
+
+
+    private void Dash()
+    {
+        Debug.Log("Dash is called");
+        dashTimer = dashCoolDown;
+        StartCoroutine(DashRoutine());
+    
+
+    }
+    IEnumerator DashRoutine()
+    {
+        isDashing = true;
+
+        if (curreDirection == Vector2.down) {
+            PlayerRB.velocity = new Vector2(0f, transform.localScale.y * (-dashSpeed) / dashDuration);
+        }
+        else if (curreDirection == Vector2.up)
+        {
+            PlayerRB.velocity = new Vector2(0f, transform.localScale.y * dashSpeed / dashDuration);
+        }
+        else if (curreDirection == Vector2.left)
+        {
+            PlayerRB.velocity = new Vector2(transform.localScale.x * (-dashSpeed) / dashDuration, 0f);
+        }
+        else if (curreDirection == Vector2.right)
+        {
+            PlayerRB.velocity = new Vector2(transform.localScale.x * dashSpeed / dashDuration , 0f);
+        }
+
+
+        Debug.Log("veolocy is " + PlayerRB.velocity);
+        yield return new WaitForSeconds(dashTimer);
+        isDashing = false;
+        yield return new WaitForSeconds(dashCoolDown);
+    }
+
+
     #endregion
 
     #region Attack_functions
@@ -150,6 +211,15 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Tons of Damage");
                 hit.transform.GetComponent<Enemy>().TakeDamage(Damage);
             }
+
+
+            Debug.Log(hit.transform.name);
+            if (hit.transform.CompareTag("InvisibleEnemy"))
+            {
+                Debug.Log("Tons of Damage to inv");
+                hit.transform.GetComponent<Enemy>().TakeDamage(Damage);
+            }
+
         }
         yield return new WaitForSeconds(hitboxtiming);
         isAttacking = false;
